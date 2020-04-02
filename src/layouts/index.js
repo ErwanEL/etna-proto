@@ -2,6 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import Helmet from "react-helmet";
 import Link from "gatsby-link";
+// import logo from "./logo.png";
 
 import "../style/index.scss";
 
@@ -16,11 +17,8 @@ const Layout = ({ children, site }) => (
     >
       <div class="navbar-brand">
         <a class="navbar-item" href="https://bulma.io">
-          <img
-            src="../static/assets/images/logo.png"
-            width="70"
-            style={{ maxHeight: "5rem" }}
-          />
+          {/* width="70" style={{ maxHeight: "5rem" }} */}
+          <img src={"/logo.png"} />
         </a>
 
         <a
