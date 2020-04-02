@@ -33,14 +33,29 @@ const Layout = ({ children, site }) => (
         </div>
       </div> */}
       <div className="Wrap">{children}</div>
-      <div className="Wrap">
-        <div className="Footer">
+      <footer class="footer">
+        <div class="content has-text-centered">
+          <p>
+            <strong>Bulma</strong> by{" "}
+            <a href="https://jgthms.com">Jeremy Thomas</a>. The source code is
+            licensed
+            <a href="http://opensource.org/licenses/mit-license.php">MIT</a>.
+            The website content is licensed{" "}
+            <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
+              CC BY NC SA 4.0
+            </a>
+            .
+          </p>
+        </div>
+      </footer>
+      {/* <div className="container">
+        <div className="footer">
           This website is just an example project to demonstrate how you can
           integrate <a href="https://www.gatsbyjs.org/">Gatsby</a>,{" "}
           <a href="https://snipcart.com/">Snipcart</a> and{" "}
           <a href="https://www.datocms.com">DatoCMS</a>.
         </div>
-      </div>
+      </div> */}
     </div>
   </div>
 );
