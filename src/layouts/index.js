@@ -2,6 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import Helmet from "react-helmet";
 import Link from "gatsby-link";
+import Header from "../components/header";
 // import logo from "./logo.png";
 
 import "../style/index.scss";
@@ -9,33 +10,9 @@ import "../style/index.scss";
 const Layout = ({ children, site }) => (
   <div>
     <Helmet title="Snipcart + DatoCMS + GatsbyJS Example" />
-    <nav
-      class="navbar"
-      role="navigation"
-      aria-label="main navigation"
-      style={{ backgroundColor: "#c9f4ea" }}
-    >
-      <div class="navbar-brand">
-        <a class="navbar-item" href="https://bulma.io">
-          {/* width="70" style={{ maxHeight: "5rem" }} */}
-          <img src={"/logo.png"} />
-        </a>
-
-        <a
-          role="button"
-          class="navbar-burger burger"
-          aria-label="menu"
-          aria-expanded="false"
-          data-target="navbarBasicExample"
-        >
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-        </a>
-      </div>
-    </nav>
+    <Header />
     <div className="Container">
-      <div className="Header">
+      {/* <div className="Header">
         <div className="Wrap">
           <div className="Header__body">
             <h1 className="Header__title">
@@ -54,7 +31,7 @@ const Layout = ({ children, site }) => (
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
       <div className="Wrap">{children}</div>
       <div className="Wrap">
         <div className="Footer">
