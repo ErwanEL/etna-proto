@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import Helmet from "react-helmet";
-import Link from "gatsby-link";
+// import Link from "gatsby-link";
 import Header from "../components/header";
 // import logo from "./logo.png";
 
@@ -33,11 +33,18 @@ const Layout = ({ children, site }) => (
         </div>
       </div> */}
       <div className="Wrap">{children}</div>
-      <footer class="footer">
-        <div class="content has-text-centered">
-          <p>
-            <strong>ETNA JOYAS Oficial</strong> | 🇺🇾
-          </p>
+      <footer
+        style={{ borderTop: ".5px solid #A89379" }}
+        className="footer has-background-white"
+      >
+        <div className="content has-text-centered">
+          <p className="is-marginless">Tienda oficial | Etna Joyas</p>
+          <img
+            style={{ margin: "auto" }}
+            className="image is-96x96"
+            src={"/uy.png"}
+            alt="uy"
+          />
         </div>
       </footer>
     </div>
