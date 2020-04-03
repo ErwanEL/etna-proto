@@ -33,14 +33,13 @@ const Layout = ({ children, site }) => (
         </div>
       </div> */}
       <div className="Wrap">{children}</div>
-      <div className="Wrap">
-        <div className="Footer">
-          This website is just an example project to demonstrate how you can
-          integrate <a href="https://www.gatsbyjs.org/">Gatsby</a>,{" "}
-          <a href="https://snipcart.com/">Snipcart</a> and{" "}
-          <a href="https://www.datocms.com">DatoCMS</a>.
+      <footer class="footer">
+        <div class="content has-text-centered">
+          <p>
+            <strong>ETNA JOYAS Oficial</strong> | 🇺🇾
+          </p>
         </div>
-      </div>
+      </footer>
     </div>
   </div>
 );
