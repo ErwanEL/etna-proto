@@ -31,12 +31,14 @@ export default () => (
     `}
     render={data => (
       <Layout site={data.site}>
-        <div className="Catalogue">
-          {data.products.edges.map(({ node: product }) => (
-            <div className="Catalogue__item card" key={product.id}>
-              <CardProduct product={product} />
-            </div>
-          ))}
+        <div className="section">
+          <div className="columns is-multiline ">
+            {data.products.edges.map(({ node: product }) => (
+              <div className="column is-one-quarter" key={product.id}>
+                <CardProduct product={product} />
+              </div>
+            ))}
+          </div>
         </div>
       </Layout>
     )}

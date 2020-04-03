@@ -5,7 +5,7 @@ import Helmet from "react-helmet";
 import Header from "../components/header";
 // import logo from "./logo.png";
 
-import "../style/index.scss";
+// import "../style/index.scss";
 
 const Layout = ({ children, site }) => (
   <div>
@@ -32,7 +32,7 @@ const Layout = ({ children, site }) => (
           </div>
         </div>
       </div> */}
-      <div className="Wrap">{children}</div>
+      <div className="container">{children}</div>
       <footer
         style={{ borderTop: ".5px solid #A89379" }}
         className="footer has-background-white"
