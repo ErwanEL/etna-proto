@@ -8,28 +8,45 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css"
     />
+    <link rel="stylesheet" href="styles/debug.css" />
     <script
       defer
       src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"
     ></script>
+    <style>
+      .tag {
+        position: absolute;
+        top: 20px;
+        left: 30px;
+      }
+      .price {
+        margin-bottom: 0px;
+      }
+    </style>
   </head>
-  <body>
-    <section class="hero" style="background-color: #c9f4ea">
-      <div class="hero-body is-paddingless">
-        <div class="container">
-          <img class="image is-128x128" src="logo-260.png" width="70" />
-        </div>
-      </div>
-    </section>
-    <section class="section">
+  <body class="has-navbar-fixed-top">
+    <nav class="navbar is-fixed-top " style="border-bottom: 0.1px solid #F5D4C9; justify-content: center; background-color: #c9f4ea" role="navigation" aria-label="main navigation">
+      <!-- <div class="navbar-brand "> -->
+        <!-- <a class="navbar-item" href="https://bulma.io"> -->
+          <img
+          style="margin: auto;"
+          class="image is-96x96"
+          src="logo-260.png"
+          />
+        <!-- </a> -->
+      <!-- </div> -->
+    </nav>
+    
+    
+    <!-- <section class="section">
       <div class="container">
-        <!-- <h1 class="title">
+        <h1 class="title">
           Bienvenido en nuestra tienda oficial
-        </h1> -->
-        <!-- <p class="subtitle">My first website with <strong>Bulma</strong>!</p> -->
+        </h1>
+        <p class="subtitle">My first website with <strong>Bulma</strong>!</p>
       </div>
-    </section>
-    <section class="section">
+    </section> -->
+    <section style="margin-top: 44px;" class="section">
       <div class="container">
         <h1 style="color: #A87868" class="title is-4">Nuestros productos</h1>
         <div class="columns">
@@ -91,12 +108,15 @@
                 </div> -->
 
                 <div class="content">
-                  <p class="title is-6 has-text-centered">
+                  <p class="title is-6">
                     Necklace Lorem ipsum dolor, sit amet consectetur adipisicing
                     elit.
                   </p>
                   <!-- <div> -->
-                  <p style="color: #79A89D" class="has-text-centered is-size-5">
+                  <p
+                    style="color: #79A89D"
+                    class="is-marginless  is-size-5"
+                  >
                     10$
                   </p>
                   <!-- <br /> -->
@@ -123,11 +143,14 @@
               </div>
               <div class="card-content">
                 <div class="content">
-                  <p class="title is-6 has-text-centered">
+                  <p class="subtitle is-6 has-text-centered">
                     Necklace Lorem ipsum dolor, sit amet consectetur adipisicing
                     elit.
                   </p>
-                  <p style="color: #79A89D" class="has-text-centered is-size-5">
+                  <p
+                    style="color: #79A89D"
+                    class="is-marginless has-text-centered is-size-5"
+                  >
                     15$
                   </p>
                   <p class="tag is-danger is-light is-size-7">
