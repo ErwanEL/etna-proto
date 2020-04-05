@@ -5,7 +5,6 @@ import Img from "gatsby-image";
 
 const CardProduct = ({ product }) => {
   return (
-    <div>
       <div
         className="card"
         data-item-id={product.id}
@@ -31,7 +30,6 @@ const CardProduct = ({ product }) => {
           </div>
         </div>
       </div>
-    </div>
   );
 };
 

@@ -31,7 +31,7 @@ export default () => (
     `}
     render={data => (
       <Layout site={data.site}>
-        <div className="section">
+        <div className="container">
           <div className="columns is-multiline ">
             {data.products.edges.map(({ node: product }) => (
               <div className="column is-one-quarter" key={product.id}>
