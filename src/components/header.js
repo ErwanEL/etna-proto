@@ -14,6 +14,7 @@ class Header extends React.Component {
         style={{ justifyContent: "center" }}
       >
         <img
+          alt="logo"
           style={{ margin: "auto" }}
           className="image is-96x96"
           src={"/logo.png"}

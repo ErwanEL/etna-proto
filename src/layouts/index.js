@@ -11,7 +11,7 @@ const Layout = ({ children, site }) => (
   <div>
     <Helmet title="Snipcart + DatoCMS + GatsbyJS Example" />
     <Header />
-    <div className="Container" style={{ marginTop: "95px" }}>
+    {/* <div className="" style={{ marginTop: "95px" }}> */}
       {/* <div className="Header">
         <div className="Wrap">
           <div className="Header__body">
@@ -32,7 +32,7 @@ const Layout = ({ children, site }) => (
           </div>
         </div>
       </div> */}
-      <div className="container">{children}</div>
+      <div className="section" style={{ marginTop: "95px" }}>{children}</div>
       <footer
         style={{ borderTop: ".5px solid #A89379" }}
         className="footer has-background-white"
@@ -47,12 +47,12 @@ const Layout = ({ children, site }) => (
           />
         </div>
       </footer>
-    </div>
+    {/* </div> */}
   </div>
 );
 
 Layout.propTypes = {
-  children: PropTypes.func
+  children: PropTypes.func,
 };
 
 export default Layout;
