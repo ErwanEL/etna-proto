@@ -1,5 +1,5 @@
 {
-  "name": "datocms-snipcart-gatsby-example",
+  "name": "etnajoyas",
   "description": "An example project to demonstrate how you can integrate Gatsby, Snipcart and DatoCMS",
   "version": "1.0.0",
   "author": "Stefano Verna <s.verna@datocms.com>",
@@ -9,6 +9,7 @@
     "gatsby": "^2.18.8",
     "gatsby-image": "^2.2.34",
     "gatsby-link": "^2.2.25",
+    "gatsby-plugin-manifest": "^2.3.3",
     "gatsby-plugin-react-helmet": "^3.1.16",
     "gatsby-plugin-sass": "^2.1.24",
     "gatsby-plugin-sharp": "^2.3.5",

@@ -9,10 +9,10 @@ import Header from "../components/header";
 
 const Layout = ({ children, site }) => (
   <div>
-    <Helmet title="Snipcart + DatoCMS + GatsbyJS Example" />
+    <Helmet title="Etna Joyas" />
     <Header />
     {/* <div className="" style={{ marginTop: "95px" }}> */}
-      {/* <div className="Header">
+    {/* <div className="Header">
         <div className="Wrap">
           <div className="Header__body">
             <h1 className="Header__title">
@@ -32,21 +32,23 @@ const Layout = ({ children, site }) => (
           </div>
         </div>
       </div> */}
-      <div className="section" style={{ marginTop: "95px" }}>{children}</div>
-      <footer
-        style={{ borderTop: ".5px solid #A89379" }}
-        className="footer has-background-white"
-      >
-        <div className="content has-text-centered">
-          <p className="is-marginless">Tienda oficial | Etna Joyas</p>
-          <img
-            style={{ margin: "auto" }}
-            className="image is-96x96"
-            src={"/uy.png"}
-            alt="uy"
-          />
-        </div>
-      </footer>
+    <div className="section" style={{ marginTop: "95px" }}>
+      {children}
+    </div>
+    <footer
+      style={{ borderTop: ".5px solid #A89379" }}
+      className="footer has-background-white"
+    >
+      <div className="content has-text-centered">
+        <p className="is-marginless">Tienda oficial | Etna Joyas</p>
+        <img
+          style={{ margin: "auto" }}
+          className="image is-96x96"
+          src={"/uy.png"}
+          alt="uy"
+        />
+      </div>
+    </footer>
     {/* </div> */}
   </div>
 );
