@@ -1,0 +1,27 @@
+.card:hover .price {
+  background-color: #a87868;
+  color: white;
+}
+
+.card:hover .title-product {
+  color: #a87868;
+}
+
+.stock {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.price {
+  position: absolute;
+  float: right;
+  right: 20px;
+  bottom: 10px;
+  text-align: center;
+}
+
+.title-product {
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+}

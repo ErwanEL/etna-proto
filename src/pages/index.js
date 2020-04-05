@@ -5,7 +5,7 @@ import CardProduct from "../components/cardProduct";
 import "typeface-playfair-display";
 
 const fontPlaifairDisplay = {
-  fontFamily: "playfair-display",
+  fontFamily: "Playfair Display ,serif",
 };
 
 export default () => (
