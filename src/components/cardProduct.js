@@ -2,34 +2,29 @@ import React from "react";
 // import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image";
 // import { css } from "@emotion/core"
+import "../style/card.scss";
 
 const CardProduct = ({ product }) => {
   return (
-      <div
-        className="card"
-        data-item-id={product.id}
-        data-item-price={product.price}
-        data-item-image={product.image.url}
-        data-item-name={product.name}
-        data-item-url={`/`}
-      >
-        <div className="card-image">
-          <Img sizes={product.image.sizes} />
-        </div>{" "}
-        <div className="card-content">
-          <div className="content">
-            <div className="subtitle is-6 has-text-centered">
-              {product.name}
-            </div>
-            <p
-              style={{ color: "#79A89D" }}
-              className="is-marginless has-text-centered is-size-5"
-            >
-              {product.price}$
-            </p>
-          </div>
-        </div>
+    <div
+      className="card"
+      data-item-id={product.id}
+      data-item-price={product.price}
+      data-item-image={product.image.url}
+      data-item-name={product.name}
+      data-item-url={`/`}
+    >
+      <Img
+        className="card-image "
+        style={{ paddingTop: "25%" }}
+        sizes={product.image.sizes}
+      />
+      <div className="card-content">
+        <p className="title-product is-6">{product.name}</p>
+        <span className="price is-size-5">{product.price}$</span>
+        <span class="stock tag is-light">Sin stock</span>
       </div>
+    </div>
   );
 };
 
