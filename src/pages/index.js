@@ -2,6 +2,11 @@ import React from "react";
 import { StaticQuery, graphql } from "gatsby";
 import Layout from "../layouts/index";
 import CardProduct from "../components/cardProduct";
+import "typeface-playfair-display";
+
+const fontPlaifairDisplay = {
+  fontFamily: "playfair-display",
+};
 
 export default () => (
   <StaticQuery
@@ -29,9 +34,9 @@ export default () => (
         }
       }
     `}
-    render={data => (
+    render={(data) => (
       <Layout site={data.site}>
-        <div className="container">
+        <div className="container" style={fontPlaifairDisplay}>
           <div className="columns is-multiline ">
             {data.products.edges.map(({ node: product }) => (
               <div className="column is-one-quarter" key={product.id}>
