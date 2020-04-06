@@ -9,6 +9,8 @@ module.exports = {
   plugins: [
     "gatsby-plugin-sass",
     "gatsby-plugin-react-helmet",
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-source-datocms`,
       options: { apiToken: process.env.DATO_API_TOKEN },

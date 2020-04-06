@@ -1,7 +1,7 @@
 // import { Link } from "gatsby";
 // import React from "react";
 // import PropTypes from "prop-types"
-// import Img from "gatsby-image"
+import Img from "gatsby-image";
 // import { css } from "@emotion/core"
 
 import React from "react";
@@ -12,8 +12,11 @@ const Header = () => (
     query={graphql`
       {
         logo: file(relativePath: { eq: "logo.png" }) {
-          id
-          name
+          childImageSharp {
+            fixed(width: 96, height: 96) {
+              ...GatsbyImageSharpFixed
+            }
+          }
         }
       }
     `}
@@ -22,14 +25,20 @@ const Header = () => (
         className="navbar is-fixed-top"
         role="navigation"
         aria-label="main navigation"
-        style={{ justifyContent: "center" }}
+        style={{ textAlign: "center" }}
       >
-        <img
+        {console.log(data.logo)}
+        <Img
+          style={{ margin: "auto" }}
+          // className="image is-96x96"
+          fixed={data.logo.childImageSharp.fixed}
+        />
+        {/* <img
           alt="logo"
           style={{ margin: "auto" }}
           className="image is-96x96"
           src={"/logo.png"}
-        />
+        /> */}
       </nav>
     )}
   ></StaticQuery>
