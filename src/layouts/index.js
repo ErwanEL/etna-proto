@@ -3,6 +3,8 @@ import PropTypes from "prop-types";
 import Helmet from "react-helmet";
 // import Link from "gatsby-link";
 import Header from "../components/header";
+import NotificationWhatsapp from "../components/notificationWhatsapp";
+
 // import logo from "./logo.png";
 
 // import "../style/index.scss";
@@ -11,6 +13,7 @@ const Layout = ({ children, site }) => (
   <div>
     <Helmet title="Etna Joyas" />
     <Header />
+    <NotificationWhatsapp />
     {/* <div className="" style={{ marginTop: "95px" }}> */}
     {/* <div className="Header">
         <div className="Wrap">
