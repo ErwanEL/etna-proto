@@ -27,7 +27,6 @@ const Header = () => (
         aria-label="main navigation"
         style={{ textAlign: "center" }}
       >
-        {console.log(data.logo)}
         <Img
           style={{ margin: "auto" }}
           // className="image is-96x96"

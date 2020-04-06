@@ -1,7 +1,5 @@
 import React from "react";
-// import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image";
-// import { css } from "@emotion/core"
 import "../style/card.scss";
 
 const CardProduct = ({ product }) => {
@@ -22,7 +20,7 @@ const CardProduct = ({ product }) => {
       <div className="card-content">
         <p className="title-product is-6">{product.name}</p>
         <span className="price is-size-5">{product.price}$</span>
-        <span class="stock tag is-light">Sin stock</span>
+        <span className="stock tag is-light">Sin stock</span>
       </div>
     </div>
   );

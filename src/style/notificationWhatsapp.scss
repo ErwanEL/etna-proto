@@ -1,0 +1,20 @@
+.notification {
+  width: 100%;
+  //   margin-top: 44px;
+  z-index: 100;
+  position: fixed;
+  display: block !important;
+}
+
+// .notification-none {
+//   display: none !important;
+// }
+
+.whatsapp {
+  object-fit: cover;
+  height: 24px;
+  width: 73px;
+  padding-right: 0px;
+  right: 18px;
+  top: 4px;
+}
