@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import Helmet from "react-helmet";
 // import Link from "gatsby-link";
 import Header from "../components/header";
-import NotificationWhatsapp from "../components/NotificationWhatsapp";
+import NotificationWhatsapp from "../components/notificationWhatsapp";
 
 // import logo from "./logo.png";
 
