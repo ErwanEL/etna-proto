@@ -1,3 +1,7 @@
+.card:hover {
+  cursor: pointer;
+}
+
 .card:hover .price {
   background-color: #a87868;
   color: white;

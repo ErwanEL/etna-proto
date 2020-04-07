@@ -5,6 +5,9 @@ import "../style/card.scss";
 const CardProduct = ({ product }) => {
   return (
     <div
+      onClick={() =>
+        document.querySelector(".notification").classList.remove("is-hidden")
+      }
       className="card"
       data-item-id={product.id}
       data-item-price={product.price}
