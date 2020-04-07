@@ -5,6 +5,7 @@ import Img from "gatsby-image";
 const NotificationWsp = ({ logoWsp }) => {
   return (
     <div className="notification notification-none is-fixed-top is-inline has-text-left-mobile has-text-centered-desktop">
+      <button className="delete"></button>
       Te gustan algunos de nuestros productos?{" "}
       <strong>Los pedidos se hacen via whatsapp.</strong>{" "}
       <a>Podes pedirnos aquí.</a>
