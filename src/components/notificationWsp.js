@@ -3,20 +3,18 @@ import "../style/notificationWsp.scss";
 import Img from "gatsby-image";
 
 const NotificationWsp = ({ logoWsp }) => {
-  const [show, setShow] = React.useState(true);
-  const toggleNotif = () => {
-    return setShow(!show);
-  };
-
   return (
     <div
-      className={`notification ${!show &&
-        "notification-none"} is-fixed-top is-inline has-text-left-mobile has-text-centered-desktop`}
+      className={`notification fade-in is-hidden is-fixed-top has-text-left-mobile has-text-centered-desktop`}
     >
-      <button onClick={toggleNotif} className="delete"></button>
+      <button
+        onClick={() =>
+          document.querySelector(".notification").classList.toggle("is-hidden")
+        }
+        className="delete"
+      ></button>
       Te gustan algunos de nuestros productos?{" "}
-      <strong>Los pedidos se hacen via whatsapp.</strong>{" "}
-      <a>Podes pedirnos aquí.</a>
+      <strong>Los pedidos se hacen via whatsapp.</strong> <a>Pidenos aquí.</a>
       <Img className="wsp" fixed={logoWsp.childImageSharp.fixed} />
     </div>
   );
