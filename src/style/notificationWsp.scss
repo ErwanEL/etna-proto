@@ -3,12 +3,12 @@
   //   margin-top: 44px;
   z-index: 100;
   position: fixed;
-  display: block !important;
+  display: block;
 }
 
-// .notification-none {
-//   display: none !important;
-// }
+.notification-none {
+  display: none !important;
+}
 
 .wsp {
   object-fit: cover;
