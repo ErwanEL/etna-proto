@@ -1,19 +1,7 @@
 import React from "react";
-import { useStaticQuery, graphql } from "gatsby";
 import Img from "gatsby-image";
 
-const Header = () => {
-  const data = useStaticQuery(graphql`
-    {
-      logo: file(relativePath: { eq: "logo.png" }) {
-        childImageSharp {
-          fixed(width: 96, height: 96) {
-            ...GatsbyImageSharpFixed
-          }
-        }
-      }
-    }
-  `);
+const Header = ({ logo }) => {
   return (
     <nav
       className="navbar is-fixed-top"
@@ -21,7 +9,7 @@ const Header = () => {
       aria-label="main navigation"
       style={{ textAlign: "center" }}
     >
-      <Img style={{ margin: "auto" }} fixed={data.logo.childImageSharp.fixed} />
+      <Img style={{ margin: "auto" }} fixed={logo.childImageSharp.fixed} />
     </nav>
   );
 };

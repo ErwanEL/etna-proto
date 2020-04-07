@@ -1,26 +1,14 @@
 import React from "react";
-import { useStaticQuery, graphql } from "gatsby";
 import "../style/notificationWsp.scss";
 import Img from "gatsby-image";
 
-const NotificationWsp = () => {
-  const data = useStaticQuery(graphql`
-    {
-      logowsp: file(relativePath: { eq: "whatsapp-logo-bw.png" }) {
-        childImageSharp {
-          fixed(width: 73, height: 24) {
-            ...GatsbyImageSharpFixed
-          }
-        }
-      }
-    }
-  `);
+const NotificationWsp = ({ logoWsp }) => {
   return (
-    <div class="notification notification-none is-fixed-top is-inline has-text-left-mobile has-text-centered-desktop">
+    <div className="notification notification-none is-fixed-top is-inline has-text-left-mobile has-text-centered-desktop">
       Te gustan algunos de nuestros productos?{" "}
       <strong>Los pedidos se hacen via whatsapp.</strong>{" "}
       <a>Podes pedirnos aquí.</a>
-      <Img className="wsp" fixed={data.logowsp.childImageSharp.fixed} />
+      <Img className="wsp" fixed={logoWsp.childImageSharp.fixed} />
     </div>
   );
 };
