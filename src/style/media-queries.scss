@@ -1,0 +1,97 @@
+@media screen and (max-width: 640px) {
+  .mosaic {
+    width: 100%;
+    margin-top: 35px;
+  }
+}
+
+/* 
+      ##Device = Desktops
+      ##Screen = 1281px to higher resolution desktops
+    */
+
+@media (min-width: 1281px) {
+  .mosaic {
+    width: 80%;
+    max-height: 650px;
+  }
+}
+
+/* 
+      ##Device = Laptops, Desktops
+      ##Screen = B/w 1025px to 1280px
+    */
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .mosaic {
+    /* margin-top: 10px; */
+    max-width: 80%px;
+    /* min-width: 0px; */
+    height: 600px;
+    /* max-height: 630px; */
+    /* min-height: 0px; */
+  }
+}
+
+/* 
+      ##Device = Tablets, Ipads (portrait)
+      ##Screen = B/w 768px to 1024px
+    */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .mosaic {
+    width: 80%;
+    max-height: 800px;
+  }
+}
+
+/* 
+      ##Device = Tablets, Ipads (landscape)
+      ##Screen = B/w 768px to 1024px
+    */
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .mosaic {
+    width: 70%;
+    max-height: 800px;
+  }
+}
+
+/* 
+      ##Device = Low Resolution Tablets, Mobiles (Landscape)
+      ##Screen = B/w 481px to 767px
+    */
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .mosaic {
+    width: 100%;
+    margin-top: 35px;
+  }
+}
+
+/* 
+      ##Device = Most of the Smartphones Mobiles (Portrait)
+      ##Screen = B/w 320px to 479px
+    */
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .mosaic {
+    // margin: auto;
+    // margin-top: 120px;
+    // width: 60%;
+    /* min-width: 0px; */
+    margin-bottom: 120px;
+    height: 600px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 25%);
+    // grid-auto-rows: auto;
+    grid-gap: 1rem;
+    grid-template-areas:
+      "a a d d"
+      "a a c c"
+      "a a c c"
+      "b b b b"
+      ". e e .";
+  }
+}

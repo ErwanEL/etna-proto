@@ -5,6 +5,7 @@ import Helmet from "react-helmet";
 import Img from "gatsby-image";
 import Header from "../components/header";
 import NotificationWsp from "../components/notificationWsp";
+import Mosaique from "../components/mosaique";
 // import Link from "gatsby-link";
 
 // import "../style/index.scss";
@@ -33,6 +34,20 @@ const Layout = ({ children, site }) => {
           }
         }
       }
+      photosMosaique: allFile(
+        filter: { relativeDirectory: { eq: "mosaique" } }
+        sort: { fields: name }
+      ) {
+        edges {
+          node {
+            childImageSharp {
+              fluid {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+        }
+      }
     }
   `);
   return (
@@ -40,9 +55,8 @@ const Layout = ({ children, site }) => {
       <Helmet title="Etna Joyas" />
       <Header logo={data.logo} />
       <NotificationWsp logoWsp={data.logoWsp} />
-      <div className="section" style={{ marginTop: "95px" }}>
-        {children}
-      </div>
+      <Mosaique photosMosaique={data.photosMosaique} />
+      <div className="section">{children}</div>
       <footer
         style={{ borderTop: ".5px solid #A89379" }}
         className="footer has-background-white"
