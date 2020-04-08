@@ -6,9 +6,9 @@ import "../style/media-queries.scss";
 const Mosaique = ({ photosMosaique }) => {
   return (
     <div className="section" style={{ paddingTop: "0px", marginTop: "95px" }}>
-      <div class="mosaic">
+      <div className="mosaic">
         {photosMosaique.edges.map(({ node: image }) => (
-          <div class="tile">
+          <div className="tile">
             <Img className="img" fluid={image.childImageSharp.fluid} />
           </div>
         ))}
