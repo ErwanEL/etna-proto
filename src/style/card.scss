@@ -1,3 +1,7 @@
+.card:hover {
+  cursor: pointer;
+}
+
 .card:hover .price {
   background-color: #a87868;
   color: white;
@@ -18,6 +22,7 @@
   right: 20px;
   bottom: 10px;
   text-align: center;
+  padding: 0 5px;
 }
 
 .title-product {

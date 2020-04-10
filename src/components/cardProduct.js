@@ -1,12 +1,13 @@
 import React from "react";
-// import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image";
-// import { css } from "@emotion/core"
 import "../style/card.scss";
 
 const CardProduct = ({ product }) => {
   return (
     <div
+      onClick={() =>
+        document.querySelector(".notification").classList.remove("is-hidden")
+      }
       className="card"
       data-item-id={product.id}
       data-item-price={product.price}
