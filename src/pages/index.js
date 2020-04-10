@@ -12,12 +12,13 @@ export default () => (
   <StaticQuery
     query={graphql`
       query CatalogueQuery {
-        products: allDatoCmsProduct {
+        products: allDatoCmsProduct(sort: { fields: stock, order: DESC }) {
           edges {
             node {
               id
               name
               price
+              stock
               image {
                 url
                 sizes(maxWidth: 300, imgixParams: { fm: "jpg" }) {
