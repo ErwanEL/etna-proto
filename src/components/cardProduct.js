@@ -23,7 +23,7 @@ const CardProduct = ({ product }) => {
       <div className="card-content">
         <p className="title-product is-6">{product.name}</p>
         <span className="price is-size-5">{product.price}$</span>
-        <span className="stock tag is-light">Sin stock</span>
+        {product.stock && <span class="stock tag is-light">Sin stock</span>}
       </div>
     </div>
   );

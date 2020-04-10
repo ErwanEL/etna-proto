@@ -15,7 +15,6 @@ const Catalogue = ({ data }) => {
         <h1 className="title is-4" style={{ color: "#a87868" }}>
           Nuestra colección
         </h1>
-
         <div className="columns is-multiline ">
           {data.products.edges.map(({ node: product }) => (
             <div className="column is-one-quarter" key={product.id}>
@@ -30,12 +29,13 @@ const Catalogue = ({ data }) => {
 
 export const query = graphql`
   query CatalogueQuery {
-    products: allDatoCmsProduct {
+    products: allDatoCmsProduct(sort: { fields: stock, order: DESC }) {
       edges {
         node {
           id
           name
           price
+          stock
           image {
             url
             sizes(maxWidth: 300, imgixParams: { fm: "jpg" }) {
