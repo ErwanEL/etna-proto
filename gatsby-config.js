@@ -13,7 +13,8 @@ module.exports = {
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-source-datocms`,
-      options: { apiToken: process.env.DATO_API_TOKEN },
+      // options: { apiToken: process.env.DATO_API_TOKEN },
+      options: { apiToken: "b4551c2c6b78d538dd567c90c14c19" },
     },
     {
       resolve: "gatsby-plugin-snipcart",
