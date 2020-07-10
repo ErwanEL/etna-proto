@@ -37,8 +37,10 @@ const Header = ({ logo }) => {
             padding: "5px",
             borderRadius: "10px",
             height: "20px",
+            backgroundColor: "#a87868",
+            color: "white",
           }}
-          class="tag is-primary snipcart-items-count"
+          class="tag is-light snipcart-items-count"
         ></span>
       </a>
       {/* <a class="snipcart-checkout">
