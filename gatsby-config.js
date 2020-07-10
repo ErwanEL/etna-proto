@@ -17,13 +17,43 @@ module.exports = {
       options: { apiToken: "b4551c2c6b78d538dd567c90c14c19" },
     },
     {
-      resolve: "gatsby-plugin-snipcart",
+      resolve: "gatsby-plugin-html-attributes",
       options: {
-        apiKey:
-          "OWE3MmZmMjQtNTk3Yi00OThhLWEwMmUtZDY4ZWM4NzIwYzZiNjM2NjM0Mzc1NzE0MTUwNzI1",
-        autopop: true,
+        lang: "es",
       },
     },
+    {
+      resolve: `gatsby-plugin-snipcart-advanced`,
+      options: {
+        version: "3.0.15",
+        publicApiKey:
+          "ZjVjZWJkMDQtNDQwMy00NjMwLWE1NDUtOTllYWVjNzFhZWRhNjM3Mjk3MzY4MTA5OTM1NjE3", // use public api key here or in environment variable
+        defaultLang: "es",
+        currency: "uyu",
+        openCartOnAdd: false,
+        locales: {
+          fr: {
+            actions: {
+              checkout: "Valider le panier",
+            },
+          },
+        },
+        innerHTML: `
+          <billing section="bottom">
+              <!-- Customization goes here -->
+          </billing>`,
+      },
+    },
+    // {
+    //   resolve: "gatsby-plugin-snipcartv3",
+    //   options: {
+    //     apiKey:
+    //       "ZjVjZWJkMDQtNDQwMy00NjMwLWE1NDUtOTllYWVjNzFhZWRhNjM3Mjk3MzY4MTA5OTM1NjE3",
+    //     // autopop: false,
+    //     // js: "https://cdn.snipcart.com/themes/v3.0.15/default/snipcart.js",
+    //     // styles: "https://cdn.snipcart.com/themes/v3.0.15/default/snipcart.css",
+    //   },
+    // },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

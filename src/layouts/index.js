@@ -52,7 +52,9 @@ const Layout = ({ children, site }) => {
   `);
   return (
     <div>
-      <Helmet title="Etna Joyas" />
+      <Helmet title="Etna Joyas">
+        <html lang="es" />
+      </Helmet>
       <Header logo={data.logo} />
       <NotificationWsp logoWsp={data.logoWsp} />
       <Mosaique photosMosaique={data.photosMosaique} />
