@@ -2,10 +2,10 @@
   cursor: pointer;
 }
 
-.card:hover .price {
-  background-color: #a87868;
-  color: white;
-}
+// .card:hover .price {
+//   background-color: #a87868;
+//   color: white;
+// }
 
 .card:hover .title-product {
   color: #a87868;
@@ -20,7 +20,7 @@
   position: absolute;
   float: right;
   right: 20px;
-  bottom: 10px;
+  bottom: 65px;
   text-align: center;
   padding: 0 5px;
 }
@@ -28,5 +28,17 @@
 .title-product {
   position: absolute;
   left: 10px;
-  bottom: 10px;
+  bottom: 65px;
+}
+
+.agregarButton {
+  color: black;
+  font-weight: 500;
+  transition: 0.5s;
+}
+
+.agregarButton:hover {
+  color: white;
+  background-color: #a87868;
+  // opacity: 1;
 }
